@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react'
 
-const WA_NUM  = '972501234567'
+const WA_NUM  = '972533429376'
 const WA_TEXT = encodeURIComponent('שלום! אני מעוניין/ת בעיצוב בלונים לאירוע שלי 🎈')
 
 function WhatsAppIcon() {
@@ -33,10 +33,10 @@ export default function Footer() {
               <WhatsAppIcon />
               שלח הודעה בוואטסאפ
             </a>
-            <a href="tel:+972501234567"
+            <a href="tel:+972533429376"
               className="inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white border border-white/30 px-8 py-4 rounded-full text-sm font-bold transition-all">
               <Phone size={16} />
-              <span dir="ltr">050-123-4567</span>
+              <span dir="ltr">053-342-9376</span>
             </a>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold mb-4 text-white/70">פרטי קשר</h4>
             <ul className="space-y-3 text-sm text-white/40">
-              <li><a href="tel:+972501234567" className="flex items-center gap-3 hover:text-white transition-colors"><Phone size={14} className="text-primary-lt" /><span dir="ltr">050-123-4567</span></a></li>
+              <li><a href="tel:+972533429376" className="flex items-center gap-3 hover:text-white transition-colors"><Phone size={14} className="text-primary-lt" /><span dir="ltr">053-342-9376</span></a></li>
               <li><a href="mailto:info@ballonart.co.il" className="flex items-center gap-3 hover:text-white transition-colors"><Mail size={14} className="text-primary-lt" />info@ballonart.co.il</a></li>
               <li className="flex items-center gap-3"><MapPin size={14} className="text-primary-lt" />תל אביב-יפו, ישראל</li>
             </ul>

@@ -10,7 +10,7 @@ import { useParams, Link } from 'react-router-dom'
 import { ArrowRight, Check, Phone, Send } from 'lucide-react'
 import { getCategoryBySlug } from '../data/categories'
 
-const WA_NUM = '972501234567'
+const WA_NUM = '972533429376'
 
 /* ── גלריית Masonry ── */
 function MasonryGallery({ images }) {
@@ -222,11 +222,11 @@ export default function CategoryPage() {
               <div className="mt-4 bg-ink rounded-2xl p-5 text-center text-white">
                 <p className="text-sm text-white/70 mb-2">מעדיף/ה לדבר?</p>
                 <a
-                  href="tel:+972501234567"
+                  href="tel:+972533429376"
                   className="flex items-center justify-center gap-2 font-bold text-lg hover:text-primary transition-colors"
                 >
                   <Phone size={18} />
-                  <span dir="ltr">050-123-4567</span>
+                  <span dir="ltr">053-342-9376</span>
                 </a>
               </div>
             </div>

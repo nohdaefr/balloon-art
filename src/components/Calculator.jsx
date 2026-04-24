@@ -21,7 +21,7 @@ const EXTRAS = [
   { id: 'numbers', label: 'מספרים / אותיות', add: 380 },
   { id: 'ceiling', label: 'עיצוב תקרה',      add: 620 },
 ]
-const WA_NUM = '972501234567'
+const WA_NUM = '972533429376'
 
 export default function Calculator() {
   const [eventType, setEventType] = useState('birthday')

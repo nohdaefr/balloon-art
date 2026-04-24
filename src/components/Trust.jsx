@@ -1,7 +1,7 @@
 const ITEMS = [
   { emoji: '🚚', title: 'משלוח חינם',        desc: 'לכל הארץ מעל ₪800' },
   { emoji: '⭐', title: 'חומרים פרימיום',     desc: 'Qualatex® בלבד' },
-  { emoji: '📞', title: 'תמיכה 24/7',         desc: '050-123-4567' },
+  { emoji: '📞', title: 'תמיכה 24/7',         desc: '053-342-9376' },
   { emoji: '✅', title: '100% שביעות רצון',  desc: 'או החזר כספי' },
 ]
 
