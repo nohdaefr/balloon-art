@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Heebo', system-ui, sans-serif;
+    direction: rtl;
+    background-color: #FFFFFF;
+    color: #1A0A2E;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  :focus:not(:focus-visible) { outline: none; }
+  :focus-visible { outline: 2px solid #E8057A; outline-offset: 2px; }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+/* Fade-in on scroll */
+.fade-in-hidden {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gallery image hover */
+.gallery-img {
+  transition: transform 0.55s cubic-bezier(0.25,0.46,0.45,0.94), filter 0.4s ease;
+  filter: brightness(0.95) saturate(1.1);
+  will-change: transform;
+}
+.gallery-card:hover .gallery-img {
+  transform: scale(1.07);
+  filter: brightness(1.05) saturate(1.25);
+}
+
+/* Shine sweep */
+.gallery-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 40%, rgba(255,255,255,0.1) 50%, transparent 60%);
+  transform: translateX(-120%);
+  transition: transform 0.55s ease;
+  z-index: 3;
+  pointer-events: none;
+}
+.gallery-card:hover::before { transform: translateX(120%); }
+
+/* Product card hover glow */
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(232,5,122,0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-hidden { transition: none; }
+  *, *::before, *::after { animation-duration: .01ms !important; }
+}
